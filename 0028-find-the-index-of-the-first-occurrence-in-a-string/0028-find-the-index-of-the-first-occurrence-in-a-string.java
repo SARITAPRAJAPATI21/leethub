@@ -9,9 +9,9 @@ class Solution {
 
          if(haystack.charAt(i)==needle.charAt(0) && i+needle.length()<=haystack.length() ){
 
-         //  String s1=haystack.substring(i, i+needle.length());
+           String s1=haystack.substring(i, i+needle.length());
          
-          if(haystack.substring(i,i+needle.length()).compareTo(needle)==0){  index=i;   break;  }
+          if(s1.compareTo(needle)==0){  index=i;   break;  }
           
          }
 
