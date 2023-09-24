@@ -7,16 +7,16 @@ class Solution {
        Map<Character,String> m=new HashMap<>();
 
       for(int i=0;i<pattern.length();i++){
-        char current_char=pattern.charAt(i);//a
+       
 
-        if(m.containsKey(current_char) ){
-           if( !m.get(current_char).equals(words[i]))
+        if(m.containsKey(pattern.charAt(i)) ){
+           if( !m.get(pattern.charAt(i)).equals(words[i]))
             return false;
           }
           
          else if (m.containsValue(words[i])) return false ;
           
-           m.put(current_char, words[i]);
+           m.put(pattern.charAt(i), words[i]);
       }
        return true;
 
